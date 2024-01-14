@@ -9,6 +9,7 @@ def solution(numer1, denom1, numer2, denom2):
     else:
         denom = denom1 * denom2
         numer = (numer1 * denom2) + (numer2 * denom1)
+    # 파이썬 최대공약수 내장함수
     gcd = math.gcd(denom, numer)
     if gcd != 1:
         numer, denom = divisionGCD(numer, denom, gcd)
@@ -20,4 +21,3 @@ def divisionGCD(numer, denom, gcd):
     numer = numer / gcd
     denom = denom / gcd
     return numer, denom
-
