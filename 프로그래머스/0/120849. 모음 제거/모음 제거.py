@@ -1,5 +1,4 @@
 def solution(my_string):
-    answer = []
     vowel = "aeiou"
     for i in vowel:
         if i in my_string:
