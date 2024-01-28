@@ -5,6 +5,4 @@ def solution(arr):
         for j in range(m):
             if arr[i][j] != arr[j][i]:
                 answer = 0
-                break
-            break
     return answer
